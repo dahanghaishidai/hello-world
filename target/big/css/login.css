@@ -1,0 +1,121 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+.buttonNew{
+    width: 70px;
+    height: 34px;
+    font-size: 15px;
+    margin-left: 20px;
+    margin-top: 23px;
+
+}
+.buttonNew2{
+    height: 80px;
+    display: block;
+    float: left;
+    margin-left: 60px;
+}
+.loginDiv{
+    width: 100%;
+    height: 100%;
+    background-color: #c7edcc;
+    margin: 0 auto;
+}
+#table3{
+    margin: 0 auto;
+}
+th{
+    width: 100px;
+    height: 60px;
+    font-size: 30px;
+}
+.text{
+
+    width: 200px;
+    height: 72px;
+    font-size: 30px;
+}
+.info{
+    padding: 0px;
+    height: 60px;
+    font-size: 30px;
+    float: left;
+    margin-left: 5px;
+    margin-top: 6px;
+
+}
+.img2{
+    height: 72px;
+    width: 45px;
+    float: left;
+}
+td{
+    padding: 0px;
+}
+.info2{
+    text-align: center;
+    margin-top: 7px;
+}
+#img1{
+    margin-top: 18px;
+    margin-left: 5px;
+}
+.mima{
+    width: 100px;
+    height: 33px;
+    float: left;
+    line-height: 33px;
+    font-size: 25px;
+
+    text-align: center;
+
+}
+.mima2{
+    width: 120px;
+    height: 40px;
+    float: left;
+}
+
+
+#passStrength{height:6px;width:120px;border:1px solid #ccc;padding:1px;float: left;margin-top: 12px}
+.strengthLv1{background:red;width: 100px;
+    height: 33px;
+    float: left;
+    line-height: 33px;
+    font-size: 25px;
+
+    text-align: center;}
+.strengthLv2{background:orange;width: 100px;
+    height: 33px;
+    float: left;
+    line-height: 33px;
+    font-size: 25px;
+
+    text-align: center;}
+.strengthLv3{background:green;width: 100px;
+    height: 33px;
+    float: left;
+    line-height: 33px;
+    font-size: 25px;
+
+    text-align: center;}
+.jindutiao1{
+    height: 100%;
+    width: 40px;
+    float: left;
+    background-color: #7a20ed;
+}
+.jindutiao2{
+    height: 100%;
+    width: 80px;
+    float: left;
+    background-color: #7a20ed;
+}
+.jindutiao3{
+    height: 100%;
+    width: 120px;
+    float: left;
+    background-color: #7a20ed;
+}

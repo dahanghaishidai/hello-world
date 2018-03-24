@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jx.modules.dao.UserBigDao">
+    <resultMap id="UserBigDTO" type="com.jx.modules.dto.UserBigDTO">
+        <result property="id" column="id" jdbcType="DECIMAL"></result>
+        <result property="username" column="username" jdbcType="VARCHAR"></result>
+        <result property="password" column="password" jdbcType="VARCHAR"></result>
+
+    </resultMap>
+    <select id="searchUserBigDaoByUsername" parameterType="java.util.Map" resultMap="UserBigDTO">
+        SELECT t.id
+              ,t.username
+              ,t.password
+
+              FROM  userbig t
+              WHERE 1=1
+
+             <if test="dto.id != null and dto.id != ''">
+
+                 AND t.id = #{dto.id}
+             </if>
+        <if test="dto.username != null and dto.username != ''">
+
+            AND t.username = #{dto.username}
+        </if>
+        <if test="dto.password != null and dto.password != ''">
+
+            AND t.password = #{dto.password}
+        </if>
+
+
+    </select>
+
+    <select id="serachUserByUsernameAndPassword" parameterType="java.util.Map" resultMap="UserBigDTO">
+        SELECT t.id
+        ,t.username
+        ,t.password
+
+        FROM  userbig t
+        WHERE t.username=#{dto.username} and t.password=#{dto.password}
+
+
+    </select>
+
+    <select id="serachUserByUsername" parameterType="java.util.Map" resultMap="UserBigDTO">
+        SELECT t.id
+        ,t.username
+        ,t.password
+
+        FROM  userbig t
+        WHERE t.username=#{dto.username}
+
+
+    </select>
+</mapper>
